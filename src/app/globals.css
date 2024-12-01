@@ -1,0 +1,656 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --orange: #ff6f0f;
+  --light_orange: #ffbd91;
+  --pastel-orange: #ff7955;
+  --white: #ffffff;
+  --grey: #323232;
+  --dark-grey: #2a2a2a;
+  --black: #000000;
+  --lightgrey: #e6e6e6;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  color: var(--orange) !important;
+  font-weight: 700 !important;
+}
+h6 {
+  color: var(--white) !important;
+  font-weight: 600 !important;
+}
+.white-title {
+  color: var(--white) !important;
+  font-weight: 500 !important;
+}
+.black-header {
+  color: var(--black) !important;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+.white-p {
+  color: var(--white) !important;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.fw-400 {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+.border_2 {
+  border: solid var(--orange) 2px;
+  border-radius: 0px;
+}
+.bg-darkgrey {
+  background-color: var(--dark-grey) !important;
+}
+.bg-grey {
+  background-color: var(--grey) !important;
+}
+.bg-white {
+  background-color: var(--white);
+}
+.highlight {
+  color: var(--orange) !important;
+}
+.related {
+  background-color: var(--light_orange);
+  color: var(--black);
+}
+.horizontaLine {
+  border: 0;
+  height: 4px;
+  background-color: #ff6600;
+  width: 100%;
+  opacity: 1;
+  margin: 0;
+}
+
+
+.btn.primaryBtn {
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--orange);
+  border-radius: 0;
+  padding: 5px 30px;
+}
+/* navbar */
+.navbar-toggler-icon {
+  border-color: var(--black);
+}
+.bottom-bar {
+  color: var(--white);
+}
+.nav-link.active-link {
+  color: var(--orange);
+}
+
+/* //footer design */
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+}
+.bg-footer li a {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.list li {
+  font-size: 0.75rem;
+}
+/* banner homepage design */
+.hero-section {
+  background: url("/image/hero/herohomepage.png") center center/cover no-repeat;
+  color: var(--white);
+  padding: 50px 0px;
+  height: auto;
+}
+.text-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+.banner-header {
+  color: var(--white) !important ;
+  font-size: 4rem !important;
+}
+
+.hero-buttons .btn {
+  margin: 10px;
+}
+.hero-buttons .btn:hover {
+  background-color: var(--pastel-orange);
+  color: var(--white);
+}
+.categories {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0px;
+}
+.categories .btn {
+  color: var(--white);
+}
+.categories .vertical-line-1 .mobile-design {
+  display: none;
+}
+.horizontaLine {
+  border: 0;
+  height: 4px;
+  background-color: #ff6600;
+  width: 100%;
+  opacity: 1;
+  margin: 0;
+}
+
+/* //service  */
+.service-item {
+  background-color: var(--dark-grey) !important;
+  color: var(--white) !important;
+}
+.service-item p {
+  font-size: 0.85rem;
+}
+.service-item h4 {
+  font-size: 1.25rem;
+}
+.service-item .btn:hover {
+  background-color: var(--pastel-orange);
+}
+
+/* industries */
+
+.line-container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: black;
+  z-index: 1;
+}
+
+.icons {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.industry-item {
+  text-align: center;
+  background-color: var(--white);
+  padding: 0 10px;
+}
+.icon {
+  font-size: 24px;
+}
+
+.title {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+ /* //leadership team card  */
+.card-shape {
+  --p: 35px;
+  height: 220px;
+  aspect-ratio: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - var(--p)));
+  position: relative;
+}
+.leader-img img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.arrow-forward {
+  position: absolute;
+  bottom: -22px;
+  left: 20%;
+  transform: translateX(-50%);
+  background-color: var(--orange) !important;
+  border: none;
+  border-radius: 100% !important;
+  padding: 3px !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.back-arrow {
+  position: absolute;
+  bottom: 20px !important;
+  left: 20%;
+  transform: translateX(-50%);
+  background-color: var(--orange) !important;
+  border: none;
+  border-radius: 100% !important;
+  padding: 3px !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.overlay-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.leader-card-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  min-height: 518px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.overlay-content {
+  background-color: var(--orange) !important;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+  color: var(--black) !important;
+  min-height: 500px;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 50px;
+}
+
+ /* // partners  */
+@keyframes scrollLogos {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.partner-logos-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.partner-logos {
+  display: flex;
+  animation: scrollLogos 30s linear infinite;
+  align-items: center;
+}
+
+
+
+/* ABout us Page */
+.about-us-banner {
+  background: url("/image/hero/heroaboutuspage.png") center center/cover
+    no-repeat;
+  color: var(--white);
+  height: auto;
+  text-align: center;
+  padding: 100px 20px;
+}
+.about-us-banner h2 {
+  font-size: 3.65rem !important;
+}
+.about-us-card {
+  margin-top: -70px !important;
+}
+.each-card {
+  color: var(--white) !important;
+}
+.each-card h3 {
+  font-weight: 700 !important;
+}
+.bg-location {
+  background-image: url("/image/location.png");
+}
+.text-size p {
+  font-size: 0.85rem !important;
+}
+.vertical-line {
+  border-left: 2px solid var(--orange) !important;
+  height: 350px;
+}
+.about-us-button.btn:hover{
+  background-color: var(--pastel-orange);
+  color: var(--white);
+
+}
+
+/* service page  with different services */
+.service-banner {
+  background: url("/image/hero/heroservicepage.png") center center/cover
+    no-repeat;
+  color: var(--white);
+  height: auto;
+  text-align: center;
+  padding: 100px;
+
+}
+
+
+.vertical-line-1 {
+  border-left: 1px solid var(--orange);
+}
+.service-title {
+  color: var(--orange);
+  font-weight: 400;
+}
+.service-card {
+  border-bottom: 2px solid var(--orange);
+}
+.service-info h4 {
+  color: var(--orange);
+}
+.service-info p {
+  color: var(--white);
+}
+
+/* //industries page */
+.industries-banner {
+  background: url("/image/hero/heroindustriespage.png") center center/cover
+    no-repeat;
+  color: var(--white);
+  height: auto;
+  text-align: center;
+  padding: 100px;
+}
+.indsutries-card {
+  color: var(--white) ;
+}
+.primary-text {
+  color: var(--orange) !important;
+}
+
+.contact-us-section p {
+  color: var(--white);
+  font-weight: 200;
+}
+ .industries-button.btn:hover{
+  background-color: var(--pastel-orange);
+  color: var(--white);
+ }
+/* Contact Page */
+.contact-page p {
+ font-weight: 400;
+}
+
+.timeline-list {
+  position: relative !important;
+  padding-left: 1.5rem !important;
+}
+
+.timeline-list::before {
+  content: "" ;
+  position: absolute ;
+  left: 0.75rem;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: var(--white); 
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 14px;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.circle + p {
+  line-height: 1.6;
+  color: white;
+}
+.contact-form label {
+  color: var(--orange) !important;
+}
+
+
+/* Jobs Page */
+.outlineBtn {
+  border: 1px solid var(--orange) !important;
+  border-radius: 0% !important;
+  padding: 3px 20px !important;
+}
+.outlineBtn:hover {
+  background-color: var(--orange) !important;
+}
+.badge {
+  border-radius: 4px !important;
+  font-size: 14px !important;
+}
+.card-job {
+  color: var(--white);
+}
+.jobs-button.btn:hover{
+background-color:var(--pastel-orange);
+}
+
+ /* //Newsletter page */
+.newsletter-banner {
+  background: url("/image/hero/newletter.png") center center/cover no-repeat;
+  color: var(--black);
+  height: auto;
+  text-align: center;
+  padding: 100px;
+}
+.newsletter-banner h1,
+h6 {
+  color: var(--black) !important;
+}
+
+.related-card {
+  background-color: var(--lightgrey) !important;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.megamenu-p {
+  font-size: 0.7rem;
+}
+.btn.megamenu-button {
+  background-color: var(--orange);
+  border-radius: 0;
+  font-size: 0.6rem;
+  height: 30px;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.btn.megamenu-button:hover{
+  background-color: var(--pastel-orange);
+
+}
+.dropdown-menu-1 {
+  background: rgba(238, 238, 238, 0.813);
+  backdrop-filter: blur(1px);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+  margin-top: 34rem;
+}
+.megamenu-content {
+  color: var(--black);
+}
+.megamenu-content hr {
+  margin: 0;
+  color: var(--black);
+}
+.megamenu-contanier {
+  color: var(--black);
+}
+.megamenu-contanier hr {
+  color: var(--black);
+  margin: 0;
+}
+/* When the mega menu is visible */
+.dropdown-menu .show {
+  opacity: 1;
+  visibility: visible;
+}
+.herp-content {
+  z-index: 1;
+  position: relative;
+}
+
+
+
+input::placeholder {
+  color: var(--lightgrey) !important;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
+  .text-content {
+    width: 100%;
+  }
+  .banner-paragraph {
+    font-size: 1rem;
+  }
+  .text-content h5 {
+    font-size: 1rem;
+  }
+  .banner-header {
+    font-size: 1rem;
+  }
+  .hero-buttons {
+    margin: 0;
+  }
+  .map{
+    max-width: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-section {
+    padding-top: 3.5rem !important;
+    text-align: center;
+    height: 40vh;
+  }
+  .banner-header {
+    font-size: 1.5rem !important;
+  }
+  .text-content {
+    text-align: center !important;
+  }
+  .banner-paragraph {
+    padding-top: 3rem !important;
+  }
+  .banner-paragraph .vertical-line-1 {
+    display: none;
+  }
+  .categories {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .categories .btn {
+    margin: 0;
+    padding: 0;
+  }
+  .vertical-line-mobile {
+    border-left: 1px solid var(--orange);
+  }
+
+  .services-section {
+    padding-top: 20rem;
+  }
+  .intro-section .white-p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 400;
+  }
+  .partner-logos {
+    animation: none;
+
+    flex-direction: column;
+    margin: auto;
+  }
+  .about-us-banner {
+    padding-top: 4.5rem;
+  }
+  .about-us-banner h2 {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+  .industries-banner {
+    text-align: center;
+    padding: 0;
+
+    padding-top: 2rem;
+  }
+  .line {
+    display: none;
+  }
+  .icons {
+    flex-wrap: wrap;
+  }
+  .industry {
+    width: 50%;
+    margin-bottom: 4rem;
+  }
+
+  .industry-item {
+    background-color: transparent;
+  }
+  .line-container {
+    display: block;
+    height: auto;
+  }
+  .service-banner {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .partnership-banner h1{
+    width: 100% !important;
+  }
+  .service-banner h1 {
+    margin-bottom: 0 !important;
+  }
+  .service-banner p {
+    margin-bottom: 0 !important;
+  }
+}
+
+
