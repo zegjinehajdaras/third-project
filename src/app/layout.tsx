@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "../components/homepage/Header";
-import Footer from "../components/homepage/Footer";
+import Header from "../components/global/header/Header";
+import Footer from "../components/global/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Cyberware Glogal-Defense",
@@ -25,7 +25,6 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
       </body>

@@ -1,4 +1,4 @@
-import TestimonialsSlider from "@/components/homepage/Testimonials";
+import TestimonialsSlider from "@/components/homepage/testimonials/Testimonials";
 import PartnershipBlackCard from "@/components/partnerships/PartnershipBlackCard";
 import PartnershipCard from "@/components/partnerships/PartnershipCard";
 import React from "react";
@@ -40,8 +40,8 @@ const PartnershipPage = () => {
         paragraph="Lorem ipsum dolor sit amet consectetur. Tristique dignissim dolor nunc sagittis pretium quam amet. Feugiat nisi eget ut convallis ac neque tristique faucibus integer. Amet donec maecenas vitae sollicitudin neque mauris etiam. Nibh dictum id ut vestibulum mattis neque cursus. Tortor eleifend egestas et lorem. Enim nisi non parturient malesuada sed. Scelerisque massa amet ut diam amet aliquam pulvinar aliquet. Lectus urna pellentesque eget lorem sed phasellus eget diam. Fermentum orci interdum ornare libero velit at pellentesque."
       />
       <div className=" p-3 text-white">
-        
-      <TestimonialsSlider/>
+
+        <TestimonialsSlider />
       </div>
     </div>
   );

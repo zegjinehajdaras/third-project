@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
   --orange: #ff6f0f;
@@ -12,7 +12,7 @@
 }
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 h1 {
   color: var(--orange) !important;
@@ -72,7 +72,6 @@ h6 {
   margin: 0;
 }
 
-
 .btn.primaryBtn {
   font-weight: 600;
   color: var(--white);
@@ -88,7 +87,7 @@ h6 {
   color: var(--white);
 }
 .nav-link.active-link {
-  color: var(--orange);
+  color: var(--orange) !important;
 }
 
 /* //footer design */
@@ -106,7 +105,7 @@ h6 {
 }
 /* banner homepage design */
 .hero-section {
-  background: url("/image/hero/herohomepage.png") center center/cover no-repeat;
+  background: url('/image/hero/herohomepage.png') center center/cover no-repeat;
   color: var(--white);
   padding: 50px 0px;
   height: auto;
@@ -208,8 +207,7 @@ h6 {
   font-weight: 500;
 }
 
-
- /* //leadership team card  */
+/* //leadership team card  */
 .card-shape {
   --p: 35px;
   height: 220px;
@@ -290,7 +288,7 @@ h6 {
   padding: 50px;
 }
 
- /* // partners  */
+/* // partners  */
 @keyframes scrollLogos {
   0% {
     transform: translateX(100%);
@@ -313,11 +311,9 @@ h6 {
   align-items: center;
 }
 
-
-
 /* ABout us Page */
 .about-us-banner {
-  background: url("/image/hero/heroaboutuspage.png") center center/cover
+  background: url('/image/hero/heroaboutuspage.png') center center/cover
     no-repeat;
   color: var(--white);
   height: auto;
@@ -337,7 +333,7 @@ h6 {
   font-weight: 700 !important;
 }
 .bg-location {
-  background-image: url("/image/location.png");
+  background-image: url('/image/location.png');
 }
 .text-size p {
   font-size: 0.85rem !important;
@@ -346,23 +342,20 @@ h6 {
   border-left: 2px solid var(--orange) !important;
   height: 350px;
 }
-.about-us-button.btn:hover{
+.about-us-button.btn:hover {
   background-color: var(--pastel-orange);
   color: var(--white);
-
 }
 
 /* service page  with different services */
 .service-banner {
-  background: url("/image/hero/heroservicepage.png") center center/cover
+  background: url('/image/hero/heroservicepage.png') center center/cover
     no-repeat;
   color: var(--white);
   height: auto;
   text-align: center;
   padding: 100px;
-
 }
-
 
 .vertical-line-1 {
   border-left: 1px solid var(--orange);
@@ -383,7 +376,7 @@ h6 {
 
 /* //industries page */
 .industries-banner {
-  background: url("/image/hero/heroindustriespage.png") center center/cover
+  background: url('/image/hero/heroindustriespage.png') center center/cover
     no-repeat;
   color: var(--white);
   height: auto;
@@ -391,7 +384,7 @@ h6 {
   padding: 100px;
 }
 .indsutries-card {
-  color: var(--white) ;
+  color: var(--white);
 }
 .primary-text {
   color: var(--orange) !important;
@@ -401,13 +394,13 @@ h6 {
   color: var(--white);
   font-weight: 200;
 }
- .industries-button.btn:hover{
+.industries-button.btn:hover {
   background-color: var(--pastel-orange);
   color: var(--white);
- }
+}
 /* Contact Page */
 .contact-page p {
- font-weight: 400;
+  font-weight: 400;
 }
 
 .timeline-list {
@@ -416,13 +409,13 @@ h6 {
 }
 
 .timeline-list::before {
-  content: "" ;
-  position: absolute ;
+  content: '';
+  position: absolute;
   left: 0.75rem;
   top: 0;
   height: 100%;
   width: 2px;
-  background-color: var(--white); 
+  background-color: var(--white);
 }
 
 .circle {
@@ -442,7 +435,6 @@ h6 {
   color: var(--orange) !important;
 }
 
-
 /* Jobs Page */
 .outlineBtn {
   border: 1px solid var(--orange) !important;
@@ -459,13 +451,13 @@ h6 {
 .card-job {
   color: var(--white);
 }
-.jobs-button.btn:hover{
-background-color:var(--pastel-orange);
+.jobs-button.btn:hover {
+  background-color: var(--pastel-orange);
 }
 
- /* //Newsletter page */
+/* //Newsletter page */
 .newsletter-banner {
-  background: url("/image/hero/newletter.png") center center/cover no-repeat;
+  background: url('/image/hero/newletter.png') center center/cover no-repeat;
   color: var(--black);
   height: auto;
   text-align: center;
@@ -494,9 +486,8 @@ button:disabled {
   justify-content: space-between;
   font-weight: bold;
 }
-.btn.megamenu-button:hover{
+.btn.megamenu-button:hover {
   background-color: var(--pastel-orange);
-
 }
 .dropdown-menu-1 {
   background: rgba(238, 238, 238, 0.813);
@@ -529,8 +520,6 @@ button:disabled {
   position: relative;
 }
 
-
-
 input::placeholder {
   color: var(--lightgrey) !important;
 }
@@ -555,7 +544,7 @@ input::placeholder {
   .hero-buttons {
     margin: 0;
   }
-  .map{
+  .map {
     max-width: 100px;
   }
 }
@@ -642,7 +631,7 @@ input::placeholder {
     flex-direction: column;
     gap: 0px;
   }
-  .partnership-banner h1{
+  .partnership-banner h1 {
     width: 100% !important;
   }
   .service-banner h1 {
@@ -652,5 +641,3 @@ input::placeholder {
     margin-bottom: 0 !important;
   }
 }
-
-

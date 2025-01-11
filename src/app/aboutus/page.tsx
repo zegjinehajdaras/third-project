@@ -4,7 +4,7 @@ import CertificateCard from "@/components/aboutus/CertificateCard";
 import ChooseUs from "@/components/aboutus/ChooseUs";
 import CybersecuritySpec from "@/components/aboutus/CybersecuritySpec";
 import Location from "@/components/aboutus/Location";
-import Cards from "@/components/homepage/Card";
+import Cards from "@/components/homepage/leadership/LeadershipItem";
 import React from "react";
 
 const FirstIcon = () => (
@@ -135,12 +135,12 @@ const AboutUsPage = () => {
           <Cards
             image="/image/man.png"
             title="Furkan Bajrami "
-            paragraph={"Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id."} bioparagraph1={""} bioparagraph2={""}          />
+            paragraph={"Lorem ipsum dolor sit amet consectetur. Arcu nullam habitasse tortor id."} bioparagraph1={""} bioparagraph2={""} />
 
           <Cards
             image="/image/petar.png"
             title="Petar Ninovski Co- Founder & CXX"
-            paragraph="Petar has over 10 years of experience in cybersecurity and IT consulting." bioparagraph1={""} bioparagraph2={""}          />
+            paragraph="Petar has over 10 years of experience in cybersecurity and IT consulting." bioparagraph1={""} bioparagraph2={""} />
         </div>
       </div>
 
@@ -152,17 +152,17 @@ const AboutUsPage = () => {
           <Cards
             title="Emily Johnson"
             paragraph="Emily simplifies cybersecurity for employees through workshops, teaching best practices for staying safe online"
-            image="/logo/about_us_logo/emili.png" bioparagraph1={""} bioparagraph2={""}          />
+            image="/logo/about_us_logo/emili.png" bioparagraph1={""} bioparagraph2={""} />
 
           <Cards
             title="Hannah Weber"
             paragraph="Hannah creates engaging security campaigns, making cybersecurity easy to understand and apply across teams"
-            image="/logo/about_us_logo/hanahh.png" bioparagraph1={""} bioparagraph2={""}          />
+            image="/logo/about_us_logo/hanahh.png" bioparagraph1={""} bioparagraph2={""} />
 
           <Cards
             title="James Fischer"
             paragraph="James focuses on incident monitoring and response, using data analytics to keep systems secure from potential attacks."
-            image="/logo/about_us_logo/james.png" bioparagraph1={""} bioparagraph2={""}          />
+            image="/logo/about_us_logo/james.png" bioparagraph1={""} bioparagraph2={""} />
         </div>
       </div>
       <div className="container-fluid bg-grey text-center p-4">
@@ -185,7 +185,7 @@ const AboutUsPage = () => {
           Discover why our clients continue to choose us.
         </h2>
         <div className=" justify-content-center ">
-          <ChooseUs/>
+          <ChooseUs />
 
         </div>
       </div>

@@ -1,21 +1,19 @@
-import React from "react";
 
 const VideoSection = () => {
   return (
-    <div className="container-fluid pt-5 ">
-      <div className="row d-flex flex-row  align-items-center ">
+    <div className="container-fluid pt-5">
+      <div className="row d-flex flex-row align-items-center">
         <div className="col-12 col-md-6 ">
           <h1 className="hightlight mb-5 text-start">
-            {" "}
             "Always On Guard: Your 24/7 Online Security Solution for Unmatched
             Protection."
           </h1>
-          <div className="d-flex  justify-content-center gap-3 mb-4">
-            <div className="">
-              <button className=" btn primaryBtn border_2">Explore our Services</button>
+          <div className="d-flex justify-content-center gap-3 mb-4">
+            <div>
+              <button className="btn primaryBtn border_2">Explore our Services</button>
             </div>
-            <div className="">
-              <button className="  btn primaryBtn border_2 ">Book a demo</button>
+            <div>
+              <button className="btn primaryBtn border_2">Book a demo</button>
             </div>
           </div>
         </div>

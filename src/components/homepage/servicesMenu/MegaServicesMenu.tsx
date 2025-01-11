@@ -1,10 +1,11 @@
 import React from "react";
-import MegaMenuItem from "./MegaMenuItem";
+
 import { useState } from "react";
+import MegaMenuItem from "./MegaMenuItem";
 
 const MegaMenuPage = () => {
 
-    const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
 
   const closeMegaMenu = () => {
     setIsMenuOpen(false);
@@ -85,7 +86,7 @@ const MegaMenuPage = () => {
   );
   const SixthIcon = () => (
     <svg
-    
+
       width="39"
       height="49"
       viewBox="0 0 39 49"
@@ -101,73 +102,73 @@ const MegaMenuPage = () => {
 
   return (
     <div className="container    ">
-      <div className=" row row-cols-5    "> 
-         <MegaMenuItem
-        icon={<FirstIcon />}
-        title={"SIEM Threat Detection & Response"}
-        description="Our 24/7 monitoring services use AI-powered tools to detect and neutralize threats before they can harm your business"
-        info1="Define Security Goals"
-        info2="Select a SIEM Tool"
-        info3="Establish Data Sources"
-        info4="Normalize Data"
-        info5="Create Detection Rules"
-        info6="Implement Incident Response Procedures"
-        info7="Review and Update Regularly"
-        closeMegaMenu={closeMegaMenu}
-      />
-      <MegaMenuItem
-        icon={<SecondIcon />}
-        title={"Penetration Testing "}
-        description='"Identify and eliminate vulnerabilities in your network with our comprehensive penetration testing services."'
-        info1="Pre-Engagement Interactions"
-        info2="Reconnaissance"
-        info3="Scanning"
-        info4="Vulnerability Assessment"
-        info5="Exploitation"
-        info6="Post-Exploitation"
-        info7 = "Reporting"
-        closeMegaMenu={closeMegaMenu}
-      />
-      <MegaMenuItem
-        icon={<ThirdIcon />}
-        title={"Incident Response"}
-        description="In the event of a breach, our expert team reacts swiftly to minimize damage and restore your systems quickly"
-        info1="Preparation"
-        info2="Detection and Analysis"
-        info3="Prioritization"
-        info4="Containment"
-        info5="Eradication"
-        info6="Recovery"
-        info7="Post-Incident Review"
-        closeMegaMenu={closeMegaMenu}
-      />
-      <MegaMenuItem
-        icon={<FourthIcon />}
-        title={"Network Security"}
-        description="We offer end-to-end network security solutions, optimizing your infrastructure while securing it against unauthorized access"
-        info1="Perform a Network Audit"
-        info2="Deploy Security Devices"
-        info3="Establish Strong Access Controls"
-        info4="Update Security Software"
-        info5="Secure Network Hardware"
-        info6="Implement Network Segmentation"
-        info7 = "Establish a Maintenance System"
-        closeMegaMenu={closeMegaMenu}
-      />
-      <MegaMenuItem
-        icon={<FifthIcon />}
-        title={"Security Awareness Training"}
-        description="Empower your employees to recognize and respond to potential cyber threats. Our comprehensive security awareness programs equip your workforce with the knowledge they need to prevent attacks"
-        info1="Assess Organizational Needs"
-        info2="Get Buy-In from Leadership"
-        info3="Develop a Tailored Training Program"
-        info4="Implement Training Delivery Methods"
-        info5="Conduct Regular Training Sessions"
-        info6="Evaluate and Measure Effectiveness"
-        info7=""
-        closeMegaMenu={closeMegaMenu}
-      /></div>
-    
+      <div className=" row row-cols-5    ">
+        <MegaMenuItem
+          icon={<FirstIcon />}
+          title={"SIEM Threat Detection & Response"}
+          description="Our 24/7 monitoring services use AI-powered tools to detect and neutralize threats before they can harm your business"
+          info1="Define Security Goals"
+          info2="Select a SIEM Tool"
+          info3="Establish Data Sources"
+          info4="Normalize Data"
+          info5="Create Detection Rules"
+          info6="Implement Incident Response Procedures"
+          info7="Review and Update Regularly"
+          closeMegaMenu={closeMegaMenu}
+        />
+        <MegaMenuItem
+          icon={<SecondIcon />}
+          title={"Penetration Testing "}
+          description='"Identify and eliminate vulnerabilities in your network with our comprehensive penetration testing services."'
+          info1="Pre-Engagement Interactions"
+          info2="Reconnaissance"
+          info3="Scanning"
+          info4="Vulnerability Assessment"
+          info5="Exploitation"
+          info6="Post-Exploitation"
+          info7="Reporting"
+          closeMegaMenu={closeMegaMenu}
+        />
+        <MegaMenuItem
+          icon={<ThirdIcon />}
+          title={"Incident Response"}
+          description="In the event of a breach, our expert team reacts swiftly to minimize damage and restore your systems quickly"
+          info1="Preparation"
+          info2="Detection and Analysis"
+          info3="Prioritization"
+          info4="Containment"
+          info5="Eradication"
+          info6="Recovery"
+          info7="Post-Incident Review"
+          closeMegaMenu={closeMegaMenu}
+        />
+        <MegaMenuItem
+          icon={<FourthIcon />}
+          title={"Network Security"}
+          description="We offer end-to-end network security solutions, optimizing your infrastructure while securing it against unauthorized access"
+          info1="Perform a Network Audit"
+          info2="Deploy Security Devices"
+          info3="Establish Strong Access Controls"
+          info4="Update Security Software"
+          info5="Secure Network Hardware"
+          info6="Implement Network Segmentation"
+          info7="Establish a Maintenance System"
+          closeMegaMenu={closeMegaMenu}
+        />
+        <MegaMenuItem
+          icon={<FifthIcon />}
+          title={"Security Awareness Training"}
+          description="Empower your employees to recognize and respond to potential cyber threats. Our comprehensive security awareness programs equip your workforce with the knowledge they need to prevent attacks"
+          info1="Assess Organizational Needs"
+          info2="Get Buy-In from Leadership"
+          info3="Develop a Tailored Training Program"
+          info4="Implement Training Delivery Methods"
+          info5="Conduct Regular Training Sessions"
+          info6="Evaluate and Measure Effectiveness"
+          info7=""
+          closeMegaMenu={closeMegaMenu}
+        /></div>
+
     </div>
   );
 };
