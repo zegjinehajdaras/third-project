@@ -1,16 +1,12 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-
 import TestimonialsItem from "./TestimonialsItem";
 import { testimonials } from "@/configurations";
-
-import ArrowRight from "../../../../public/logo/general_logo/right.svg"
-import ArrowLeft from "../../../../public/logo/general_logo/left.svg"
-
+import ArrowRight from "../../../../public/logo/general_logo/right.svg";
+import ArrowLeft from "../../../../public/logo/general_logo/left.svg";
 
 const Testimonials = () => {
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemsPerPage = 3;
 
