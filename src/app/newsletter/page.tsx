@@ -1,8 +1,8 @@
+import Link from "next/link";
 import HorizontalLine from "@/components/homepage/HorizontalLine";
 import NewsLetterBanner from "@/components/newsletter/NewsLetterBanner";
 import RelatedNewsCard from "@/components/newsletter/RelatedNews";
-import Link from "next/link";
-import React from "react";
+import { newsLetter } from "@/configurations";
 
 const NewsLetterPage = () => {
   return (
@@ -12,24 +12,19 @@ const NewsLetterPage = () => {
         <div className="col-md-4 d-flex flex-column gap-3 p-5 ">
           <h4 className="highlight fw-bold ">Related News</h4>
           <hr />
-          <RelatedNewsCard
-            subtitle="Iranian Hackers Target Critical Infrastructure"
-            date="October 20, 2024 "
-            title="Iranian Hackers Breaching Critical Infrastructure for Credential Theft"
-            paragraph="Iranian Hackers Breaching Critical Infrastructure for Credential Theft"
-          />
-          <RelatedNewsCard
-            subtitle="New Vulnerabilities in Oracle Software"
-            date="October 20, 2024"
-            title="CISA Warns of Exploited Oracle Vulnerabilities"
-            paragraph=" The Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning about two Oracle vulnerabilities that are currently being exploited in the wild. Organizations are urged to apply patches immediately to mitigate risks."
-          />
-          <RelatedNewsCard
-            subtitle="Arrest of Notorious Hacker in Brazil"
-            date="October 20, 2024"
-            title="Arrest of USDoD Hacker Linked to Major Data Breaches"
-            paragraph="Brazilian authorities have arrested a notorious hacker known as USDoD, linked to significant breaches involving National Public Data and InfraGard. This operation marks a crucial step in combating cybercrime on an international scale."
-          />
+
+          {newsLetter.map((news, index) => {
+            return (
+              <RelatedNewsCard
+                key={index}
+                icon={news.icon}
+                subtitle={news.subtitle}
+                date={news.date}
+                title={news.title}
+                paragraph={news.paragraph}
+              />
+            );
+          })}
           <h4>Want to become a Contributor</h4>
           <div className=" card d-flex flex-column gap-4  p-4 related-card   ">
             <input
@@ -168,30 +163,20 @@ const NewsLetterPage = () => {
             Read more
           </Link>
         </div>
-        <div className="col-md-3">
-          <RelatedNewsCard
-            subtitle="Iranian Hackers Target Critical Infrastructure"
-            date="October 20, 2024 "
-            title="Iranian Hackers Breaching Critical Infrastructure for Credential Theft"
-            paragraph="Iranian Hackers Breaching Critical Infrastructure for Credential Theft"
-          />
-        </div>
-        <div className="col-md-3">
-          <RelatedNewsCard
-            subtitle="Iranian Hackers Target Critical Infrastructure"
-            date="October 20, 2024 "
-            title="Iranian Hackers Breaching Critical Infrastructure for Credential Theft"
-            paragraph="Iranian Hackers Breaching Critical Infrastructure for Credential Theft"
-          />
-        </div>
-        <div className="col-md-3 ">
-          <RelatedNewsCard
-            subtitle="Iranian Hackers Target Critical Infrastructure"
-            date="October 20, 2024 "
-            title="Iranian Hackers Breaching Critical Infrastructure for Credential Theft"
-            paragraph="Iranian Hackers Breaching Critical Infrastructure for Credential Theft"
-          />
-        </div>
+        {newsLetter.map((news, index) => {
+          return (
+            <div className="col-md-3">
+              <RelatedNewsCard
+                key={index}
+                icon={news.icon}
+                subtitle={news.subtitle}
+                date={news.date}
+                title={news.title}
+                paragraph={news.paragraph}
+              />
+            </div>
+          );
+        })}
       </div>
       <div className="row d-flex my-5 p-4">
         <div className="col-md-6">

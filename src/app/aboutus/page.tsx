@@ -29,33 +29,33 @@ const AboutUsPage = () => {
                 title={info.title}
                 paragraph={info.paragraph}
               />
-            ) })}
-          <div className="row d-flex justify-content-center gap-4 ">
-           {aboutUsInfo2.map((info, index) => {
-            return(
-              <AboutUsCard
-                key={index}
-                icon={info.icon}
-                title={info.title}
-                paragraph={info.paragraph}
-              />
-            )
+            );
           })}
+          <div className="row d-flex justify-content-center gap-4 ">
+            {aboutUsInfo2.map((info, index) => {
+              return (
+                <AboutUsCard
+                  key={index}
+                  icon={info.icon}
+                  title={info.title}
+                  paragraph={info.paragraph}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
       <div className="mt-5   ">
         <Location />
       </div>
-      <div >
-       <Founders/>
-       
+      <div>
+        <Founders />
       </div>
 
       <CybersecuritySpec />
 
       <div className="container p-4">
-       <Advisor/>
+        <Advisor />
       </div>
       <div className="container-fluid bg-grey text-center p-4">
         <div className=" container">
@@ -78,7 +78,6 @@ const AboutUsPage = () => {
         </h2>
         <div className=" justify-content-center ">
           <ChooseUs />
-
         </div>
       </div>
     </section>

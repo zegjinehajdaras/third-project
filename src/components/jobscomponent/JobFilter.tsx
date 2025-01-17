@@ -13,7 +13,6 @@ const JobFilters = () => {
 
   return (
     <div className="d-flex flex-wrap justify-content-between">
-     
       <div className="dropdown">
         <button
           className="btn outlineBtn dropdown-toggle"
@@ -24,7 +23,14 @@ const JobFilters = () => {
           Job Title
         </button>
         <ul className="dropdown-menu">
-          {["Cybersecurity Analyst", "Security Engineer",'Penetration Tester','Incident Response Specialist','Threat Intellingence Analyst ','Information Security Officer'].map((title) => (
+          {[
+            "Cybersecurity Analyst",
+            "Security Engineer",
+            "Penetration Tester",
+            "Incident Response Specialist",
+            "Threat Intellingence Analyst ",
+            "Information Security Officer",
+          ].map((title) => (
             <li key={title}>
               <a
                 className="dropdown-item"
@@ -44,10 +50,10 @@ const JobFilters = () => {
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-        Salary Range
+          Salary Range
         </button>
         <ul className="dropdown-menu">
-          {["500$", "600$","700$","1000$"].map((salary) => (
+          {["500$", "600$", "700$", "1000$"].map((salary) => (
             <li key={salary}>
               <a
                 className="dropdown-item"
@@ -67,10 +73,10 @@ const JobFilters = () => {
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-        Posted Date
+          Posted Date
         </button>
         <ul className="dropdown-menu">
-          {["Jan ", "Feb","March",'April','May','June'].map((date) => (
+          {["Jan ", "Feb", "March", "April", "May", "June"].map((date) => (
             <li key={date}>
               <a
                 className="dropdown-item"
