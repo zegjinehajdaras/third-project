@@ -1,5 +1,5 @@
 import ContactForm from "@/components/contact/ContactForm";
-import React from "react";
+import ContactSteps from "@/components/contact/ContactSteps";
 
 const ContactUsPage = () => {
   return (
@@ -14,33 +14,7 @@ const ContactUsPage = () => {
           <p>Email: info@cyberg.com</p>
           <p>Phone: +49 123 456 789</p>
           <p>Address: Street, Berlin Germany</p>
-          <h6 className="pt-5 text-white">What happens next?</h6>
-          <div className="mt-4">
-            <ul className="timeline-list list-unstyled">
-              <li className="d-flex align-items-start mb-4">
-                <div className="circle   d-flex justify-content-center align-items-center fw-bold me-3">
-                  1
-                </div>
-                <p className="mb-0">We'll review your cybersecurity needs.</p>
-              </li>
-              <li className="d-flex align-items-start mb-4">
-                <div className="circle   d-flex justify-content-center align-items-center fw-bold me-3">
-                  2
-                </div>
-                <p className="mb-0">
-                  You'll receive a customized security proposal.
-                </p>
-              </li>
-              <li className="d-flex align-items-start">
-                <div className="circle  d-flex justify-content-center align-items-center fw-bold me-3">
-                  3
-                </div>
-                <p className="mb-0">
-                  Once approved, we'll implement the solutions and support you.
-                </p>
-              </li>
-            </ul>
-          </div>
+          <ContactSteps />
         </div>
         <div className="col-12 col-md-6">
           <ContactForm />

@@ -1,41 +1,30 @@
-import React from "react";
-
-import { useState } from "react";
 import MegaMenuItem from "./MegaMenuItem";
-import { megaServicesMenuInfo } from "@/configurations";
+import { megaServicesMenuInfo } from "@/configurations/servicesDetails";
 
-const MegaMenuPage = () => {
-
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
-
-  const closeMegaMenu = () => {
-    setIsMenuOpen(false);
-  };
-
-
-
- 
+const MegaServicesMenu = ({ toggleServicesMenu }: { toggleServicesMenu: () => void }) => {
 
   return (
-    <div className="container    ">
-      <div className=" row row-cols-5    ">
-      {
-megaServicesMenuInfo.map((item,index)=>{
-  return(
-    <MegaMenuItem
-    key={index}
-    icon={item.icon}
-    item={item}
-    closeMegaMenu={closeMegaMenu}/>
-  )
-})
-      }
-     </div>
-
+    <div className="container">
+      <div className="row row-cols-5">
+        {megaServicesMenuInfo.map((item, index) => {
+          return (
+            <MegaMenuItem
+              keyId={index}
+              key={index}
+              icon={item.icon}
+              title={item.title}
+              description={item.description}
+              subservices={item.subservices}
+              toggleServicesMenu={toggleServicesMenu}
+            />
+          )
+        })
+        }
+      </div>
     </div>
   );
 };
 
-export default MegaMenuPage;
+export default MegaServicesMenu;
 
 

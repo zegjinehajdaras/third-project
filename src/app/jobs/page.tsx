@@ -1,64 +1,21 @@
-import JobFilters from "@/components/jobscomponent/JobFilter";
-import JobsCard from "@/components/jobscomponent/JobsCard";
+import JobFilters from "@/components/jobs/JobFilter";
+import JobsCard from "@/components/jobs/JobsCard";
+import { jobsData } from "@/configurations/jobsDetails";
 
-const jobsData = [
-  {
-    date: "April,2024",
-    highlightTitle: "Cybersecurity",
-    title: "Analyst",
-    paragraph:
-      "Join our team as a Cybersecurity Analyst, where you will monitor and analyze security systems to identify vulnerabilities and respond to incidents, ensuring our organizations data remains secure.",
-  },
-  {
-    date: "April,2024",
-    highlightTitle: "Security",
-    title: "Engineer",
-    paragraph:
-      "We are seeking a Security Engineer to design and implement robust security solutions that protect our infrastructure and data from cyber threats. Your expertise will be crucial in developing innovative security architectures and staying ahead of evolving risks.",
-  },
-  {
-    date: "5 May,2024",
-    highlightTitle: "Penetration ",
-    title: "Tester",
-    paragraph:
-      "As a Penetration Tester, you will simulate attacks to identify and exploit vulnerabilities, providing critical insights to enhance our security posture.",
-  },
-  {
-    date: "10 May,2024",
-    highlightTitle: "Incident Response  ",
-    title: "Specialist",
-    paragraph:
-      "Join us as an Incident Response Specialist, where you will manage and respond to security incidents, conducting investigations and implementing strategies to mitigate future threats.",
-  },
-  {
-    date: "1 June,2024",
-    highlightTitle: "Threat Intellingence  ",
-    title: "Analyst",
-    paragraph:
-      "We are looking for a Threat Intelligence Analyst to gather and analyze threat data, helping us stay ahead of emerging cyber threats and strengthen our defense strategies.",
-  },
-  {
-    date: "10 June,2024",
-    highlightTitle: "Information Security  ",
-    title: "Officer",
-    paragraph:
-      "We are seeking an Information Security Officer to lead our security initiatives, develop policies, and ensure compliance with regulations while safeguarding our organization’s sensitive data and infrastructure."}
- 
-];
 
 const JobsPage = async ({ searchParams }: { searchParams: any }) => {
-  const { jobTitle, salary, date } = searchParams;
+  const { jobTitle, date } = searchParams;
 
-  const filteredJobs = jobsData.filter((job) => {
-    const matchesJobTitle = jobTitle
-      ? job.highlightTitle.toLowerCase().includes(jobTitle.toLowerCase())
-      : true;
-    const matchesDate = date
-      ? job.date.toLowerCase().includes(date.toLowerCase())
-      : true;
+  let filteredJobs = jobsData;
 
-    return matchesJobTitle && matchesDate;
-  });
+  if (jobTitle) {
+    filteredJobs = jobsData.filter((job) => job.fullTitle.toLowerCase().includes(jobTitle.toLowerCase()));
+  }
+
+  if (date) {
+    filteredJobs = jobsData.filter((job) => job.date.toLowerCase().includes(date.toLowerCase()));
+  }
+
 
   return (
     <div>
@@ -71,8 +28,8 @@ const JobsPage = async ({ searchParams }: { searchParams: any }) => {
           <JobsCard
             key={index}
             data={job.date}
-            highlightTitle={job.highlightTitle}
             title={job.title}
+            higlight={job.highlight}
             paragraph={job.paragraph}
           />
         ))}

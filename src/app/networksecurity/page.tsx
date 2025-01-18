@@ -1,11 +1,8 @@
 import Image from "next/image";
-import ServiceBanner from "@/components/servicescomponents/ServiceBanner";
-import ServiceCard from "@/components/servicescomponents/ServiceCard";
+import ServiceBanner from "@/components/services/ServiceBanner";
+import ServiceCard from "@/components/services/ServiceCard";
 import networkIcon from "../../../public/logo/servicelogo/logo-4.svg";
-import {
-  networkSecurityDetailInfo,
-  networkSecurityInfo,
-} from "@/configurations";
+import { servicesDetails } from "@/configurations/servicesDetails";
 
 const NetworkSecurity = () => {
   return (
@@ -23,7 +20,7 @@ const NetworkSecurity = () => {
           <Image src={networkIcon} alt="networkicon" />
 
           <div className=" row row-cols-1 row-cols-md-5 justify-content-center  text-center gap-5 pt-5">
-            {networkSecurityInfo.map((service, index) => (
+            {servicesDetails.penetrationTesting.cards.map((service, index) => (
               <ServiceCard
                 key={index}
                 title={service.title}
@@ -32,7 +29,7 @@ const NetworkSecurity = () => {
             ))}
           </div>
           <div className="service-info container mt-5 py-4">
-            {networkSecurityDetailInfo.map((info, index) => (
+            {servicesDetails.networkSecurity.list.map((info, index) => (
               <div key={index} className="mb-5">
                 <h4>{info.title}</h4>
                 <p className="text-start">{info.paragraph}</p>

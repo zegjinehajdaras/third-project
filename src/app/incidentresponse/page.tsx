@@ -1,9 +1,8 @@
 import Image from "next/image";
-import ServiceBanner from "@/components/servicescomponents/ServiceBanner";
-import ServiceCard from "@/components/servicescomponents/ServiceCard";
+import ServiceBanner from "@/components/services/ServiceBanner";
+import ServiceCard from "@/components/services/ServiceCard";
 import incidentResponseIcon from "../../../public/logo/servicelogo/logo-3.svg";
-import { incidentResponseDetailInfo } from "@/configurations";
-import { incidentResponseInfo } from "@/configurations";
+import { servicesDetails } from "@/configurations/servicesDetails";
 
 const IncidentResponse = () => {
   return (
@@ -20,7 +19,7 @@ const IncidentResponse = () => {
         <Image src={incidentResponseIcon} alt="incidentresponseicon" />
 
         <div className=" row row-cols-1 row-cols-md-5 justify-content-center  text-center gap-5 pt-5">
-          {incidentResponseInfo.map((info) => {
+          {servicesDetails.incidentResponse.cards.map((info) => {
             return (
               <ServiceCard
                 title={info.title}
@@ -31,7 +30,7 @@ const IncidentResponse = () => {
         </div>
         <div className="service-info container mt-5 py-4">
           {" "}
-          {incidentResponseDetailInfo.map((info) => {
+          {servicesDetails.incidentResponse.list.map((info) => {
             return (
               <div className="mb-5">
                 <h4>{info.title}</h4>

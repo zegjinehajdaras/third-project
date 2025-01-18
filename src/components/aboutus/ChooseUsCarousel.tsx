@@ -3,13 +3,13 @@
 import Image from "next/image";
 import { useState } from "react";
 
- import { cardGroups } from "@/configurations";
- import ArrowRight from "../../../public/logo/general_logo/right.svg"
+import { cardGroups } from "@/configurations";
+import ArrowRight from "../../../public/logo/general_logo/right.svg"
 import ArrowLeft from "../../../public/logo/general_logo/left.svg"
 
 
 
-export default function CardsCarousel() {
+export default function ChooseUsCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemsPerPage = 3;
 
@@ -51,14 +51,14 @@ export default function CardsCarousel() {
                       {" "}
                       <strong>Company:</strong>
                     </span>
-                 {carditem.title}
+                    {carditem.title}
                   </p>
 
                   <p>
                     <span>
                       <strong>Challenge:</strong>
                     </span>
-                   {carditem.challenge}
+                    {carditem.challenge}
                   </p>
 
                   <p>
@@ -71,7 +71,7 @@ export default function CardsCarousel() {
                     <span>
                       <strong>Outcome:</strong>
                     </span>
-                   {carditem.outcome}
+                    {carditem.outcome}
                   </p>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export default function CardsCarousel() {
           onClick={handleNext}
           disabled={currentIndex + itemsPerPage >= cardGroups.length}
         >
-         <Image src={ArrowRight} alt="arrow-right" />
+          <Image src={ArrowRight} alt="arrow-right" />
         </button>
       </div>
     </div>

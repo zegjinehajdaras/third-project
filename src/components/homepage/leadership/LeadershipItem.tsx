@@ -5,12 +5,12 @@ import ArrowRight from "../../../../public/logo/general_logo/arrow_forward.svg"
 import ArrowLeft from "../../../../public/logo/general_logo/backarrow.svg"
 
 interface LeaderProps {
-  image: string;
+  image: string | null;
   name: string;
-  title: string;
+  title: string | null;
   headline: string;
-  bio: string;
-  other: string;
+  bio: string | null;
+  other: string | null;
 }
 
 
@@ -32,7 +32,7 @@ const LeadershipItem = (props: LeaderProps) => {
         <img
           src={imageSrc}
           className="card-img-top leader-img w-100 h-auto "
-          alt={title}
+          alt={title || ""}
         ></img>
         <div className="card-body p-3  bg-darkgrey flex-grow-1 d-flex flex-column  card-shape  gap-4">
           <h5 className="card-title white-title">{name} {title}</h5>
@@ -50,7 +50,7 @@ const LeadershipItem = (props: LeaderProps) => {
               <img
                 src={imageSrc}
                 className="card-img-top w-100 h-auto "
-                alt={title}
+                alt={title || ""}
               ></img>
               <div className="card-body bg-darkgrey p-3 gap-4 flex-grow-1 d-flex flex-column card-shape">
                 <h5 className="card-title white-title">{name}</h5>

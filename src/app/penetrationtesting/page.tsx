@@ -1,9 +1,9 @@
 import Image from "next/image";
-import ServiceBanner from "@/components/servicescomponents/ServiceBanner";
-import ServiceCard from "@/components/servicescomponents/ServiceCard";
-import { penetrationTestingInfo } from "@/configurations";
-import { penetrationTestingDetailInfo2 } from "@/configurations";
+import ServiceBanner from "@/components/services/ServiceBanner";
+import ServiceCard from "@/components/services/ServiceCard";
 import PenetrationIcon from "../../../public/logo/servicelogo/logo-2.svg";
+import { servicesDetails } from "@/configurations/servicesDetails";
+
 const PenetrationTesting = () => {
   return (
     <div>
@@ -19,7 +19,7 @@ const PenetrationTesting = () => {
         <Image src={PenetrationIcon} alt="Penetration Testing" />
 
         <div className=" row row-cols-1 row-cols-md-5 justify-content-center  text-center gap-5 pt-5">
-          {penetrationTestingInfo.map((service, index) => {
+          {servicesDetails.penetrationTesting.cards.map((service, index) => {
             return (
               <ServiceCard
                 key={index}
@@ -31,7 +31,7 @@ const PenetrationTesting = () => {
         </div>
         <div className="service-info container mt-5 py-4">
           {" "}
-          {penetrationTestingDetailInfo2.map((info) => {
+          {servicesDetails.penetrationTesting.list.map((info) => {
             return (
               <div className="mb-5">
                 <h4>{info.title}</h4>

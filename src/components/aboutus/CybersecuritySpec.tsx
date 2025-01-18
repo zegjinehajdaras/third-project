@@ -1,4 +1,3 @@
-import React from "react";
 import { leadershipTeam } from "@/configurations";
 
 import LeadershipItem from "../homepage/leadership/LeadershipItem";

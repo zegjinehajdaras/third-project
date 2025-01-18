@@ -1,7 +1,6 @@
-import ServiceBanner from "@/components/servicescomponents/ServiceBanner";
-import ServiceCard from "@/components/servicescomponents/ServiceCard";
-import { siemThreatDetectionDetailInfo } from "@/configurations";
-import { siemThreatDetectionInfo } from "@/configurations";
+import ServiceBanner from "@/components/services/ServiceBanner";
+import ServiceCard from "@/components/services/ServiceCard";
+import { servicesDetails } from "@/configurations/servicesDetails";
 
 const SiemThreatService = () => {
   return (
@@ -17,7 +16,7 @@ const SiemThreatService = () => {
         </h2>
 
         <div className=" row row-cols-1 row-cols-md-5  justify-content-center  text-center gap-5 pt-5">
-          {siemThreatDetectionInfo.map((info) => (
+          {servicesDetails.siem.cards.map((info) => (
             <ServiceCard
               title={info.title}
               cardparagraph={info.cardparagraph}
@@ -25,8 +24,7 @@ const SiemThreatService = () => {
           ))}
         </div>
         <div className="service-info container mt-5 py-4">
-          {" "}
-          {siemThreatDetectionDetailInfo.map((info) => (
+          {servicesDetails.siem.list.map((info) => (
             <div className="mb-5">
               <h4>{info.title}</h4>
               <p className="text-start">{info.paragraph}</p>

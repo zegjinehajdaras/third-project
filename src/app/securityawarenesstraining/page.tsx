@@ -1,9 +1,8 @@
 import Image from "next/image";
-import ServiceBanner from "@/components/servicescomponents/ServiceBanner";
-import ServiceCard from "@/components/servicescomponents/ServiceCard";
+import ServiceBanner from "@/components/services/ServiceBanner";
+import ServiceCard from "@/components/services/ServiceCard";
 import SecurityAwarenessIcon from "../../../public/logo/servicelogo/logo-5.svg";
-import { securityAwarenessInfo } from "@/configurations";
-import { securityAwarenessDetailInfo } from "@/configurations";
+import { servicesDetails } from "@/configurations/servicesDetails";
 
 const SecurityAwareness = () => {
   return (
@@ -19,9 +18,8 @@ const SecurityAwareness = () => {
           <span className="highlight">Security Awareness Training</span>{" "}
         </h2>
         <Image src={SecurityAwarenessIcon} alt="securitylogo" />
-
         <div className=" row row-cols-1 row-cols-md-5 justify-content-center  text-center gap-5 pt-5">
-          {securityAwarenessInfo.map((item, index) => {
+          {servicesDetails.securityAwareness.cards.map((item, index) => {
             return (
               <ServiceCard
                 key={index}
@@ -32,8 +30,7 @@ const SecurityAwareness = () => {
           })}
         </div>
         <div className="service-info container mt-5 py-4">
-          {" "}
-          {securityAwarenessDetailInfo.map((item, index) => {
+          {servicesDetails.securityAwareness.list.map((item, index) => {
             return (
               <div key={index} className="mb-5">
                 <h4>{item.title}</h4>

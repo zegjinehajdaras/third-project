@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 import ArrowDown from "../../../../public/logo/general_logo/arrow_down.svg"
-import MegaMenuPage
+import MegaServicesMenu
   from "@/components/homepage/servicesMenu/MegaServicesMenu";
 const BottomHeader = () => {
 
@@ -43,7 +43,7 @@ const BottomHeader = () => {
             </li>
             <li className="nav-item ps-3">
               <Link
-                href="/aboutus"
+                href="/about-us"
                 onClick={() => setCurrentSelectedMenu('aboutus')}
                 className={isActiveMenu('aboutus')}
               >
@@ -72,7 +72,7 @@ const BottomHeader = () => {
                 visibility: isServicesMenuVisible ? "visible" : "hidden",
               }}
             >
-              <MegaMenuPage />
+              <MegaServicesMenu toggleServicesMenu={toggleServicesMenu} />
             </div>
 
             <li className="nav-item ps-4 d-flex align-items-center gap-2">
@@ -101,7 +101,7 @@ const BottomHeader = () => {
 
         <div className="">
           <ul className="navbar-nav d-flex flex-row ">
-            <li className="nav-item">
+            <li className="nav-item mx-2">
               <Link
                 href="/contactus"
                 onClick={() => setCurrentSelectedMenu('contactus')}
@@ -110,7 +110,7 @@ const BottomHeader = () => {
                 Contact
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item mx-2">
               <Link
                 href="/jobs"
                 onClick={() => setCurrentSelectedMenu('jobs')}
@@ -119,7 +119,7 @@ const BottomHeader = () => {
                 Jobs
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item mx-2">
               <Link
                 href="/newsletter"
                 onClick={() => setCurrentSelectedMenu('newsletter')}

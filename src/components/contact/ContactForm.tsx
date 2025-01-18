@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -41,7 +41,6 @@ const ContactForm = () => {
       return;
     }
 
-  
     localStorage.setItem("contactForm", JSON.stringify(formData));
     alert("Form submitted !");
 
@@ -93,7 +92,7 @@ const ContactForm = () => {
         </label>
         <input
           type="tel"
-          className={  `bg-grey w-100  form-control ${errors.phone ? "is-invalid" : ""}`}
+          className={`bg-grey w-100  form-control ${errors.phone ? "is-invalid" : ""}`}
           id="phone"
           value={formData.phone}
           onChange={handleChange}
@@ -125,7 +124,7 @@ const ContactForm = () => {
           Send us a Message
         </label>
         <textarea
-          className={ `  bg-grey form-control ${errors.message ? "is-invalid" : ""}`}
+          className={`  bg-grey form-control ${errors.message ? "is-invalid" : ""}`}
           id="message"
           value={formData.message}
           onChange={handleChange}

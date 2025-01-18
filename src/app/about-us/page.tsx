@@ -2,26 +2,24 @@ import AboutUsBanner from "@/components/aboutus/AboutUsBanner";
 import AboutUsCard from "@/components/aboutus/AboutUsCard";
 import Advisor from "@/components/aboutus/Advisor";
 import CertificateCard from "@/components/aboutus/CertificateCard";
-import ChooseUs from "@/components/aboutus/ChooseUs";
+import ChooseUsCarousel from "@/components/aboutus/ChooseUsCarousel";
 import CybersecuritySpec from "@/components/aboutus/CybersecuritySpec";
 import Founders from "@/components/aboutus/Founders";
 import Location from "@/components/aboutus/Location";
-import Cards from "@/components/homepage/leadership/LeadershipItem";
 
-import { aboutUsInfo1 } from "@/configurations";
-import { aboutUsInfo2 } from "@/configurations";
+import { aboutUsInfo } from "@/configurations";
 
 const AboutUsPage = () => {
   return (
     <section className="about-us">
-      <div className=" about-us-banner ">
+      <div className="about-us-banner">
         <div className="container">
           <AboutUsBanner />
         </div>
       </div>
-      <div className=" container  ">
+      <div className="container">
         <div className="row  d-flex justify-content-center  about-us-card gap-4 ">
-          {aboutUsInfo1.map((info, index) => {
+          {aboutUsInfo.slice(0, 2).map((info, index) => {
             return (
               <AboutUsCard
                 key={index}
@@ -32,7 +30,7 @@ const AboutUsPage = () => {
             );
           })}
           <div className="row d-flex justify-content-center gap-4 ">
-            {aboutUsInfo2.map((info, index) => {
+            {aboutUsInfo.slice(2, 4).map((info, index) => {
               return (
                 <AboutUsCard
                   key={index}
@@ -45,7 +43,7 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
-      <div className="mt-5   ">
+      <div className="mt-5">
         <Location />
       </div>
       <div>
@@ -61,6 +59,7 @@ const AboutUsPage = () => {
         <div className=" container">
           <h1>Our Certification</h1>
           <div className="row row-cols-1 row-cols-md-4 gap-3 mb-4 justify-content-center">
+            {/*TODO: Maybe put inside a config file for the certificates? */}
             <CertificateCard />
             <CertificateCard />
             <CertificateCard />
@@ -77,7 +76,7 @@ const AboutUsPage = () => {
           Discover why our clients continue to choose us.
         </h2>
         <div className=" justify-content-center ">
-          <ChooseUs />
+          <ChooseUsCarousel />
         </div>
       </div>
     </section>
